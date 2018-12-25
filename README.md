@@ -17,7 +17,19 @@
             return path;
       }
 
+2.
+<img src="section2.png" width="250"/>
 
+    Path getClip(Size size) {
+        final path = Path();
+        path.lineTo(0.0, size.height);
+        var firstPoint = Offset(size.width*0.5, size.height - 90);
+        var firstEndPoint = Offset(size.width, size.height);
+        path.quadraticBezierTo(firstPoint.dx, firstPoint.dy, firstEndPoint.dx, firstEndPoint.dy);
+        path.lineTo(size.width, size.height);
+        path.lineTo(size.width, 0.0);
+        return path;
+    }
 
 
 
