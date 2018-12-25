@@ -2,7 +2,7 @@
 
 1. 
 <img src="section1.png" width="250"/>
-```Dart
+```swift
     Path getClip(Size size) {
         final path = Path();
         path.lineTo(0.0, size.height);
