@@ -82,3 +82,34 @@
         path.lineTo(0.0,size.height);
         return path;
   }
+
+6.
+<img src="section6.png" width="250"/>
+
+    ClipPath(
+        clipper: CustomClipper(),
+        child: Container(
+          decoration: BoxDecoration(gradient:
+          LinearGradient(
+            begin: Alignment.topCenter,
+            colors: [
+            Colors.teal[100],
+            Colors.amberAccent,
+          ],),
+          )
+        ),
+    )
+    Path getClip(Size size) {
+        final path = Path();
+        path.lineTo(size.width*.7,0.0);
+        var firstPoint = Offset(size.width*0.9, size.height*.15);
+        var firstEndPoint = Offset(size.width*0.5, size.height*.55);
+        path.quadraticBezierTo(firstPoint.dx, firstPoint.dy, firstEndPoint.dx, firstEndPoint.dy);
+        var sencondPoint = Offset(size.width*0.25, size.height*.8);
+        var sencondEndPoint = Offset(size.width*0.4, size.height);
+        path.quadraticBezierTo(sencondPoint.dx, sencondPoint.dy, sencondEndPoint.dx, sencondEndPoint.dy);
+        path.lineTo(size.width*.5, size.height);
+        path.lineTo(0.0,size.height);
+        return path;
+    }
+    
