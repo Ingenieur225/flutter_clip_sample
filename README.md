@@ -86,6 +86,7 @@
 6.
 <img src="section6.png" width="250"/>
 
+```Dart
     ClipPath(
         clipper: CustomClipper(),
         child: Container(
@@ -112,4 +113,6 @@
         path.lineTo(0.0,size.height);
         return path;
     }
+```
+
     
