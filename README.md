@@ -60,3 +60,25 @@
         return path;
     }
        
+5.
+<img src="section5.png" width="250"/>
+
+     Path getClip(Size size) {
+        final path = Path();
+        path.lineTo(size.width*.5,0.0);
+        var firstPoint = Offset(size.width*0.75, size.height*.15);
+        var firstEndPoint = Offset(size.width*0.5, size.height*.3);
+        path.quadraticBezierTo(firstPoint.dx, firstPoint.dy, firstEndPoint.dx, firstEndPoint.dy);
+        var sencondPoint = Offset(size.width*0.25, size.height*.45);
+        var sencondEndPoint = Offset(size.width*0.5, size.height*.6);
+        path.quadraticBezierTo(sencondPoint.dx, sencondPoint.dy, sencondEndPoint.dx, sencondEndPoint.dy);
+        var thirdPoint = Offset(size.width*0.75, size.height*.75);
+        var thirdEndPoint = Offset(size.width*0.5, size.height*.9);
+        path.quadraticBezierTo(thirdPoint.dx, thirdPoint.dy, thirdEndPoint.dx, thirdEndPoint.dy);
+        var fourthPoint = Offset(size.width*0.25, size.height*1.05);
+        var fourthEndPoint = Offset(size.width*0.5, size.height*1.2);
+        path.quadraticBezierTo(fourthPoint.dx, fourthPoint.dy, fourthEndPoint.dx, fourthEndPoint.dy);
+        path.lineTo(size.width*.5, size.height);
+        path.lineTo(0.0,size.height);
+        return path;
+  }
