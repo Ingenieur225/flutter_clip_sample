@@ -124,4 +124,21 @@
     }
 ```
 
-    
+7.
+<img src="section7.png" width="250"/>
+```Dart
+  Path getClip(Size size) {
+    final path = Path();
+    path.lineTo(size.width,0.0);
+    var firstPoint = Offset(size.width*0.9, size.height*.1);
+    var firstEndPoint = Offset(size.width*0.6, size.height*.15);
+    path.quadraticBezierTo(firstPoint.dx, firstPoint.dy, firstEndPoint.dx, firstEndPoint.dy);
+    var sencondPoint = Offset(size.width*0.2, size.height*.2);
+    var sencondEndPoint = Offset(size.width*0.1, size.height*.31);
+    path.quadraticBezierTo(sencondPoint.dx, sencondPoint.dy, sencondEndPoint.dx, sencondEndPoint.dy);
+    var thirdPoint = Offset(size.width*0.1, size.height*.31);
+    var thirdEndPoint = Offset(0.0, size.height*.45);
+    path.quadraticBezierTo(thirdPoint.dx, thirdPoint.dy, thirdEndPoint.dx, thirdEndPoint.dy);
+    return path;
+  }
+```
