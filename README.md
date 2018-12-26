@@ -3,6 +3,7 @@
 1. 
 <img src="section1.png" width="250"/>
 
+```Dart
       Path getClip(Size size) {
             final path = Path();
             path.lineTo(0.0, size.height);
@@ -16,10 +17,12 @@
             path.lineTo(size.width, 0.0);
             return path;
       }
+```
 
 2.
 <img src="section2.png" width="250"/>
 
+```Dart
     Path getClip(Size size) {
         final path = Path();
         path.lineTo(0.0, size.height);
@@ -30,11 +33,12 @@
         path.lineTo(size.width, 0.0);
         return path;
     }
-
+```
 
 3.
 <img src="section3.png" width="250"/>
 
+```Dart
    Path getClip(Size size) {
         final path = Path();
         path.lineTo(0.0, size.height - 50);
@@ -45,10 +49,12 @@
         path.lineTo(size.width, 0.0);
         return path;
   }
+```
        
 4.
 <img src="section4.png" width="250"/>
 
+```Dart
     Path getClip(Size size) {
         final path = Path();
         path.lineTo(0.0, size.height - 60);
@@ -59,10 +65,12 @@
         path.lineTo(size.width, 0.0);
         return path;
     }
+```
        
 5.
 <img src="section5.png" width="250"/>
 
+```Dart
      Path getClip(Size size) {
         final path = Path();
         path.lineTo(size.width*.5,0.0);
@@ -82,6 +90,7 @@
         path.lineTo(0.0,size.height);
         return path;
   }
+```
 
 6.
 <img src="section6.png" width="250"/>
