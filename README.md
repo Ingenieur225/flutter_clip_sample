@@ -126,6 +126,7 @@
 
 7.
 <img src="section7.png" width="250"/>
+
 ```Dart
   Path getClip(Size size) {
     final path = Path();
